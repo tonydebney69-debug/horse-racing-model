@@ -1,0 +1,90 @@
+race,distance_m,pos,runner,weight_kg,margin_l,sp,scratched
+1,1500,1,Lepolo,56.5,0,3.40,0
+1,1500,2,Cignetti (NZ),56.5,3.5,2.35,0
+1,1500,3,Glide (NZ),56,4.75,10.00,0
+1,1500,4,Ko Phangan,60,4.95,4.40,0
+1,1500,5,Utopic Future,56.5,5.01,8.00,0
+1,1500,6,Madame Doubtfire,54,15.01,101.00,0
+1,1500,,Hydrobomb,58.5,,,1
+2,1600,1,Ocean Bay (NZ),57,0,9.00,0
+2,1600,2,Jenni Gone Bonkers,58.5,1.25,4.60,0
+2,1600,3,Blue Willow,56.5,2.25,3.90,0
+2,1600,4,Celestial Zara,58.5,2.71,4.80,0
+2,1600,5,Tel Aviv,54.5,3.71,18.00,0
+2,1600,6,Korobeiniki,54.5,5.46,101.00,0
+2,1600,7,Russian Duchess,56,6.21,12.00,0
+2,1600,8,Baywatch (NZ),53,7.71,9.50,0
+2,1600,9,Ninyo,54,8.06,61.00,0
+2,1600,10,Illyivy,58,13.06,7.50,0
+2,1600,,Elsie May (NZ),60.5,,,1
+3,1000,1,Behaviour,54,0,4.00,0
+3,1000,2,Tres Magnifique,53,0.4,2.80,0
+3,1000,3,Saluted,54,0.6,10.00,0
+3,1000,4,Final Moment,53,0.85,11.00,0
+3,1000,5,Interest Point,54,3.35,12.00,0
+3,1000,6,Mainmankash,54,4.1,6.50,0
+3,1000,7,Beast Mode,61,7.1,9.00,0
+3,1000,8,Thanks Gorgeous,57.5,7.2,21.00,0
+3,1000,,Stokke,61,,,1
+4,1300,1,Ivan's Hero,57,0,19.00,0
+4,1300,2,Cruiserweight (NZ),60,0.25,2.60,0
+4,1300,3,Fundamental Nature,60,0.31,2.80,0
+4,1300,4,Queen Christine,57.5,0.77,5.00,0
+4,1300,5,Untapped,57,1.77,16.00,0
+4,1300,6,Thinxzo,60.5,3.52,19.00,0
+4,1300,7,Pure Grunt,56.5,6.52,101.00,0
+4,1300,8,Nic's Choice,60,6.72,19.00,0
+4,1300,9,Figlio D'argento,58,12.72,26.00,0
+4,1300,,Romantic Encounter (NZ),60.5,,,1
+4,1300,,Impending Link,59.5,,,1
+4,1300,,Russian Meteor,59.5,,,1
+4,1300,,He's Beset,58.5,,,1
+4,1300,,Zourain,58,,,1
+4,1300,,Savoyard,56.5,,,1
+5,1300,1,Pretty Baby,57.5,0,5.50,0
+5,1300,2,Ghana's Akan,56,3.75,3.90,0
+5,1300,3,Portinari,56,4.05,4.00,0
+5,1300,4,Profligate,56,4.8,19.00,0
+5,1300,5,Rubi's Choice,58.5,6.05,10.00,0
+5,1300,6,Saintly Dancer (NZ),56,6.4,6.00,0
+5,1300,7,Torture (NZ),57.5,8.15,61.00,0
+5,1300,8,Leopard Shark,56,8.9,51.00,0
+5,1300,9,Almost An Angel,56,10.65,31.00,0
+5,1300,10,La Barrita,56,10.71,19.00,0
+5,1300,11,Grinzinger Heart,58.5,15.71,21.00,0
+5,1300,,Rebel Tuesday,57.5,,,1
+5,1300,,Nikitria,56,,,1
+6,1300,1,Blind Raise (NZ),57.5,0,3.00,0
+6,1300,2,Wolf Gap,56,1.75,5.00,0
+6,1300,3,Shooting Brake,56,2.5,16.00,0
+6,1300,4,Tornado Valley,58.5,4,8.50,0
+6,1300,5,Put To The Sword (NZ),56,5.75,13.00,0
+6,1300,6,Dustee,56,6.75,21.00,0
+6,1300,7,Closer To Free,58.5,10.25,3.20,0
+6,1300,8,Extreme Reign,56,17.25,81.00,0
+6,1300,9,Eurocanto,57.5,20.25,51.00,0
+7,1500,1,Evaporate (NZ),58.5,0,2.05,0
+7,1500,2,Pinstriped,57,1.75,7.50,0
+7,1500,3,Zambardo (NZ),57,2.1,4.00,0
+7,1500,4,Ten Commandments,57,2.5,6.50,0
+7,1500,5,Asterix (NZ),58.5,2.85,51.00,0
+7,1500,6,Regal Zeus,58,4.6,31.00,0
+7,1500,7,Freedom Rally,57,5.85,16.00,0
+7,1500,8,Kings Valley (IRE),58,9.6,81.00,0
+7,1500,9,Newlook (FR),59,13.85,61.00,0
+7,1500,,Ambassadorial,58.5,,,1
+7,1500,,Land Legend (FR),57,,,1
+7,1500,,Immediacy (NZ),57,,,1
+8,1000,1,My Gladiola,56.5,0,9.50,0
+8,1000,2,Cavalry Girl,56.5,0.35,8.50,0
+8,1000,3,Natural Fling,50,1.1,3.00,0
+8,1000,4,Extragalactic,56.5,1.25,13.00,0
+8,1000,5,Geegees Mistruth,56.5,2,12.00,0
+8,1000,6,Skybird,56.5,3.25,15.00,0
+8,1000,7,Generosity,56.5,3.75,21.00,0
+8,1000,8,Rothfire,58.5,3.85,31.00,0
+8,1000,9,Bazaball Rewarded,56.5,4.31,41.00,0
+8,1000,10,Giga Kick,58.5,4.71,4.80,0
+8,1000,11,Point Barrow,56.5,4.77,16.00,0
+8,1000,12,Hearcomesthestar,56.5,5.77,61.00,0
+8,1000,13,Ole Dancer,56.5,7.77,61.00,0
