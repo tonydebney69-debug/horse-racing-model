@@ -117,6 +117,22 @@ information.
    was the honest, useful conclusion for the crypto side of this — it's an
    acceptable outcome here too.
 
+### 3. Track / distance / time of day — also nothing (`scripts/track_distance_time_signal.py`)
+
+No finish or sectional times exist in this data (see "Data" above), so
+"time run" here means scheduled time of day, not race time. Grouped runners
+by distance bucket, time-of-day bucket, and individual track (71 tracks with
+3,000+ runners), and checked market calibration (implied vs actual win rate)
+in each group — same test as finding 1, sliced a different way.
+
+**Calibration gap is 0.00–0.09 percentage points everywhere** — the market
+prices Hawkesbury as accurately as Muswellbrook, sprints as accurately as
+staying races, morning racing as accurately as twilight. Flat-stake ROI
+swings wildly by track (+17% to −25%) but that's noise, not signal: a
+track's ROI in 2023–24 has essentially zero correlation with its own ROI in
+2025 (r = 0.06; Murray Bridge went from the best track, +27%, to one of the
+worst, −20%, the very next period).
+
 ## Where this leaves things
 
 Two market-microstructure hypotheses tested on three years of real data,
