@@ -79,6 +79,30 @@ does backing drift-based selections move the price yourself?). Any of those
 could kill it, the way every refinement killed the crypto bot's momentum
 signals.
 
+**Update — it didn't survive scrutiny (`scripts/drift_robustness.py`).**
+Run on the BSP 6–15 band (163k runners, 55k markets):
+
+- *Year-by-year*: no consistent gradient. 2023 alone looked monotonic
+  (+9.5% → −1.7% across buckets); 2024 and especially 2025 don't
+  (2025: −2.6, +3.7, +0.1, −2.5, +4.0 — no trend).
+- *Liquidity terciles* and *field-size quartiles*: same story — the
+  gradient appears in some slices, flips or vanishes in others.
+- *Market-clustered bootstrap* (1,000 resamples) on the pooled sample:
+  drifters-minus-steamers ROI gap = **+5.2 pts, 95% CI [+0.27, +10.13]**.
+  Technically excludes zero, but the lower bound sits right on it — and
+  that's after already picking the odds band and grouping that looked
+  cleanest, which is exactly the kind of look-back that manufactures
+  significance out of noise.
+
+**Verdict: parked, not confirmed.** A result that needs everything pooled
+together to look significant, and falls apart under year/liquidity/field-size
+splits, is indistinguishable from noise that happened to look structured.
+There's also no clean mechanism — it runs opposite to the "steam = smart
+money" folklore, and "the backtest said so" isn't a mechanism. Not
+proceeding to the holdout check: freezing an unstable method and spending
+the one honest look at 2026 data on it would waste it for no real
+information.
+
 ## Rules for this repo
 
 1. Nothing gets called a "signal" until it survives a holdout check that
@@ -93,15 +117,42 @@ signals.
    was the honest, useful conclusion for the crypto side of this — it's an
    acceptable outcome here too.
 
+## Where this leaves things
+
+Two market-microstructure hypotheses tested on three years of real data,
+neither survives: BSP is well-calibrated (no favourite-longshot bias to
+exploit), and the price-drift pattern doesn't replicate across natural
+splits. That's a legitimate result, not a dead end reported as one — same
+conclusion as `strategy-has-no-edge` on the crypto side.
+
+**What's left to try, roughly in order of how much it'd actually cost:**
+
+1. Other market-only angles: same drift idea but measured differently (e.g.
+   last-60-seconds price move instead of full pre-play range), overreaction
+   to a market favourite scratching, in-play markets. Cheap to test, same
+   free data, but same odds of ending up here again given how thin this
+   data's information content is once BSP is already this well-calibrated.
+2. **Form data** — jockey, trainer, weight, barrier, recent form, sectional
+   times. This is the real missing ingredient; Benter's and every serious
+   syndicate's edge comes from modelling the *horse*, not the *market*.
+   Mostly paid (PuntingForm, Racing Australia feeds) — a real cost decision,
+   not a weekend project.
+3. Accept the conclusion and stop here. Given the account-limiting problem
+   on retail bookmakers and Betfair's commission (discussed elsewhere), even
+   a confirmed small edge would be hard to turn into real income — the
+   market-only version of this was always the cheap way to find out whether
+   there was anything here before spending money on form data.
+
 ## Layout
 
 ```
 scripts/
-  fetch_data.py              # download the raw CSVs (gitignored)
-  load_data.py                # combine + discovery/holdout split -> parquet
-  favourite_longshot_bias.py  # finding 1
-  price_drift_signal.py       # finding 2 (in progress)
+  fetch_data.py               # download the raw CSVs (gitignored)
+  load_data.py                 # combine + discovery/holdout split -> parquet
+  favourite_longshot_bias.py   # finding 1 — no bias in BSP
+  price_drift_signal.py        # finding 2 — drift gradient, looked promising
+  drift_robustness.py          # finding 2, stress-tested — doesn't survive
 data/
-  raw/                        # gitignored — re-fetch with fetch_data.py
-  processed/                  # gitignored — rebuild with load_data.py
+  raw/                         # gitignored — re-fetch with fetch_data.py
+  processed/                   # gitignored — rebuild with load_data.py
 ```
