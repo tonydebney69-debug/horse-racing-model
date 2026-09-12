@@ -43,3 +43,33 @@ original methodology at the same rigor.
 Flat $10 paper stake per bet. Profit if the pick wins = stake × (SP − 1).
 Loss if it doesn't run place = −stake. Results and running P&L logged in
 `2026-09-12_flemington.csv` and summarised at the end of the meeting.
+
+## Session stopped early — final summary
+
+Stopped after Race 9 at the user's call ("not using anything useful").
+Race 10 left unresolved, not counted.
+
+| Race | FAVOURITE | Result | P&L | DRIFT | Result | P&L |
+|---|---|---|---|---|---|---|
+| 4 | Mbube $2.80 | 2nd | -$10 | Honour The Bassett $46 | 9th | -$10 |
+| 5 | Shockletz $3.20 | 1st | +$22 | Taramansour $81 | 9th | -$10 |
+| 8 | Sheza Alibi $1.45 | 1st | +$4.50 | Autumn Boy $23 | 2nd | -$10 |
+| 9 | Gold Coast Belle $1.90 | unplaced | -$10 | Charisse $151 | unplaced | -$10 |
+
+**FAVOURITE: 2W-2L, net +$6.50. DRIFT: 0W-4L, net -$40. Combined: -$33.50 on $90 staked.**
+
+Also logged: Races 1-3 excluded (already run before tracking started),
+Races 6-7 missed (resulted before their late snapshot was captured -
+a real check-in cadence problem, not backfilled to avoid hindsight
+bias).
+
+**Honest read:** four races settles nothing statistically. DRIFT going
+0-for-4 is consistent with the repo's existing conclusion (rejected,
+no edge) - not new evidence either way. FAVOURITE finishing up $6.50
+is also unremarkable at this sample size - a well-calibrated market
+losing roughly its overround over time looks exactly like this in a
+four-race sample that happened to land two winners. The operational
+value was real, though: this exercise surfaced a genuine execution-risk
+lesson (races 6-7 missed because live tracking has a check-in cadence
+cost a backtest never shows) that's arguably more useful than the
+P&L number itself.
